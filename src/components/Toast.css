@@ -1,0 +1,48 @@
+/* src/Toast.css */
+.toast {
+     
+    background-color: yellowgreen;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.toast-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toast-buttons {
+    margin-top: 10px;
+}
+
+.toast-buttons button {
+    background-color: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toast-buttons button:hover {
+    background-color: #ff3b3b;
+}
+
+.toast-buttons button:last-child {
+    background-color: #4CAF50;
+}
+
+.toast-buttons button:last-child:hover {
+    background-color: #45a049;
+}
