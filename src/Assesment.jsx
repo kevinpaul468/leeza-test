@@ -2,7 +2,7 @@
 import React, { useState , useEffect, useRef} from 'react';
 import Toast from './components/Toast';
 import UserInputForm from './components/UserInputForm';
-import Questions from './components/Questions';
+import Questionnaire from './components/Questionnaire';
 
 function Assessment() {
   const [showToast, setShowToast] = useState(true);
@@ -24,6 +24,8 @@ function Assessment() {
   return (
     <div className="App">
       {showToast && (
+        <>
+        <div className='overlay'></div>
         <Toast
           message={
             <div>This assessment helps you understand your child's developmental  progress and whether further evaluation for autism spectrum disorder (ASD) might be necessary.
@@ -32,9 +34,12 @@ function Assessment() {
             </div>}
           onClose={handleCloseToast}
           onProceed={handleProceedToast}
-        />)}
+        />
+        
+        </>
+      )}
 
-        <Questions/>
+      <Questionnaire />
         {/* <UserInputForm /> */}
       
 

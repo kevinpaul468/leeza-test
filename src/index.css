@@ -4,11 +4,33 @@
 
 body{
     background-color: #f5f5f5;
-    
+}
 
 
 .questions-container{
     background-color: #fff;
-    width: 40%;
-    }
+    width: 30%;
+    @apply p-5 
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    z-index: 1000;
+    /* Adjust based on your z-index values */
+}
+
+.radio-input{
+    @apply transform scale-150 ;
+}
+
+.option{
+    background-color: #f0f0f0;
+    @apply m-2 p-2 flex justify-between
 }
