@@ -1,10 +1,10 @@
+
 function UserInputForm() {
     return (
         <div id="user-input-form" className="modal">
-            <div className="modal-content">
-                <span className="close" id="closeForm">&times;</span>
+            <div className="flex flex-col items-center bg-green-300">
                 <h2>User Information</h2>
-                <form id="userForm">
+                <form className="flex flex-col">
                     <label htmlFor="userName">Name:</label>
                     <input type="text" id="userName" name="userName" required />
 

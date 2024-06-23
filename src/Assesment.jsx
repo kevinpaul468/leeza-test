@@ -40,7 +40,6 @@ function Assessment() {
       )}
 
       <Questionnaire />
-        {/* <UserInputForm /> */}
       
 
     </div>
